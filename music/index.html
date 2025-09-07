@@ -2,31 +2,49 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
     <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-    <link rel="icon" type="image/x-icon" href="../files/favicon.png">
+    <link rel="icon" type="image/x-icon" href="../files/favicon.png" />
     <title>Music</title>
 </head>
 
 <body>
     <div class="text">
         <h1>music</h1>
-        <h3>what i'm listening to</h3>
-        <p>john mayer —
-            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=EUwynJ-WHGo">wild blue</a>
+        <h3>no skips</h3>
+        <p>
+            Clipse —
+            <a target="_blank" rel="noopener noreferrer" href="https://tidal.com/browse/album/447060804/u">Let God Sort
+                Em Out</a>
+        </p>
+        <br />
+        <h3>songs</h3>
+        <p>
+            The Green —
+            <a target="_blank" rel="noopener noreferrer" href="https://tidal.com/browse/track/198799628/u">Love I</a>
+        </p>
+        <p>
+            Larry June, Cardo Got Wings —
+            <a target="_blank" rel="noopener noreferrer" href="https://tidal.com/browse/track/417419078/u">Gotta Be
+                Love</a>
+        </p>
+        <p>
+            Roy Buchanan —
+            <a target="_blank" rel="noopener noreferrer" href="https://tidal.com/browse/track/417419078/u">Wayfaring
+                Pilgrim</a>
+        </p>
+        <p>
+            Lucio Corsi —
+            <a target="_blank" rel="noopener noreferrer" href="https://tidal.com/browse/track/417419078/u">Volevo essere
+                un duro</a>
         </p>
 
-        <p>b.b. king, paul carrack —
-            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=KwbHQQuUovo">bring it on home to me</a>
-        </p>
-        <p>nikos vertis —
-            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=_2iM_hsOUbM">giati to metanionis</a>
-        </p>
-
+        <br />
         <div class="container">
             <h3>some of my tracks</h3>
+
             <p>under the sun.wav</p>
             <audio id="player" controls class="audio">
                 <source src="../files/uts.wav" type="audio/wav" />
@@ -48,20 +66,19 @@
         </div>
 
         <script>
-            const player = new Plyr('#player', {
-                controls: ['play', 'progress', 'current-time', 'duration', 'volume'],
-                settings: []
+            const player = new Plyr("#player", {
+                controls: ["play", "progress", "current-time", "duration", "volume"],
+                settings: [],
             });
-            const player2 = new Plyr('#player2', {
-                controls: ['play', 'progress', 'current-time', 'duration', 'volume'],
-                settings: []
+            const player2 = new Plyr("#player2", {
+                controls: ["play", "progress", "current-time", "duration", "volume"],
+                settings: [],
             });
-            const player3 = new Plyr('#player3', {
-                controls: ['play', 'progress', 'current-time', 'duration', 'volume'],
-                settings: []
-            });    
+            const player3 = new Plyr("#player3", {
+                controls: ["play", "progress", "current-time", "duration", "volume"],
+                settings: [],
+            });
         </script>
-
     </div>
     <footer>
         <p class="cpr">© 2025 <a href="/">mikko tripakis</a></p>
