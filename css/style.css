@@ -69,3 +69,28 @@ footer {
   display: none !important;
 
 }
+
+/* Style for external link arrows */
+.external-arrow {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  transform: rotate(45deg);
+  margin-left: 3px;
+  margin-bottom: 1px;
+  position: relative;
+}
+
+.external-arrow::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  width: 8px;
+  height: 2px;
+  background-color: currentColor;
+  transform: rotate(-45deg);
+  transform-origin: left center;
+}
